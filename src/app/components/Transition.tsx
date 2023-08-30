@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const transition = (Component: React.FC) => {
-  return () => (
+  const TransitionComponent: React.FC = () => (
     <>
       <Component />
       <motion.div
@@ -21,6 +21,13 @@ const transition = (Component: React.FC) => {
       />
     </>
   );
+
+  // Définir un nom d'affichage explicite pour le composant
+  TransitionComponent.displayName = `Transition(${
+    Component.displayName || Component.name || "Component"
+  })`;
+
+  return React.memo(TransitionComponent);
 };
 
 export default transition;

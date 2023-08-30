@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import transition from "../components/Transition";
+import Transition from "../components/Transition";
 import { motion } from "framer-motion";
 import { socialMedia } from "../components/Navbar";
 
@@ -85,7 +85,7 @@ function Contact() {
                     >
                       {socialMedia.name}
                     </a>
-                  );
+                  ) as any;
                 })
                 .reduce((prev, curr) => [prev, " / ", curr])}
             </p>
@@ -96,4 +96,4 @@ function Contact() {
   );
 }
 
-export default transition(Contact);
+export default Transition(Contact);

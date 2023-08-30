@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import transition from "../components/Transition";
+import Transition from "../components/Transition";
 import { motion } from "framer-motion";
 
 function Work() {
@@ -122,6 +122,7 @@ function Work() {
           <div className="overflow-auto flex flex-col no-scrollbar h-[80vh] py-12">
             {list.map((item, index) => (
               <motion.button
+                key={index}
                 // blur animate
                 initial={{ filter: "blur(10px)" }}
                 animate={{ filter: "blur(0px)" }}
@@ -153,4 +154,4 @@ function Work() {
   );
 }
 
-export default transition(Work);
+export default Transition(Work);

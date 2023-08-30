@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import transition from "../components/Transition";
+import Transition from "../components/Transition";
 import { motion } from "framer-motion";
 
 function About() {
@@ -43,7 +43,7 @@ function About() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <p>Hello, I'm Sopow. A web developer and designer.</p>
+              <p>Hello, I{"'"}m Sopow. A web developer and designer.</p>
             </motion.div>
             <motion.div
               className="mt-8 [&>p]:pb-4 font-light text-lg max-w-2xl font-montserrat"
@@ -117,4 +117,4 @@ function About() {
   );
 }
 
-export default transition(About);
+export default Transition(About);
