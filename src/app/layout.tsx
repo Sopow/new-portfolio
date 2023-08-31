@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  themeColor: "#fff",
+  themeColor: "#ffffff",
   viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "sopow",
