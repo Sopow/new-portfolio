@@ -62,21 +62,21 @@ function About() {
               }}
             >
               <p>
-                Over the past two years, I've ventured into the world of web
-                development, initially starting with JavaScript to create
+                Over the past two years, I&apos;ve ventured into the world of
+                web development, initially starting with JavaScript to create
                 Discord bots. As I honed my skills, I transitioned to
                 TypeScript, drawn to its ability to enhance code reliability and
                 maintainability.
               </p>
               <p>
-                Now, I've become well-versed in TypeScript, employing it to
+                Now, I&apos;ve become well-versed in TypeScript, employing it to
                 craft sturdy applications with reduced error risk and improved
                 documentation. My journey from Discord bot development led me to
-                embrace the broader realm of web development, where I've found a
-                home in Next.js.
+                embrace the broader realm of web development, where I&apos;ve
+                found a home in Next.js.
               </p>
               <p>
-                With Next.js, I've unlocked a platform to build modern,
+                With Next.js, I&apos;ve unlocked a platform to build modern,
                 high-performance web apps using cutting-edge tools. My
                 background in Discord bot scripting and my TypeScript
                 proficiency uniquely inform my approach to developing
@@ -85,10 +85,10 @@ function About() {
               <p>
                 By merging my foundation in JavaScript-based Discord bot
                 crafting with my current mastery of TypeScript and the Next.js
-                framework, I've evolved into a versatile web developer. This
-                journey, sparked by Discord bots, has unfolded into an exciting
-                pursuit of pushing boundaries in web development and delivering
-                top-tier online experiences.
+                framework, I&apos;ve evolved into a versatile web developer.
+                This journey, sparked by Discord bots, has unfolded into an
+                exciting pursuit of pushing boundaries in web development and
+                delivering top-tier online experiences.
               </p>
             </motion.div>
           </div>
