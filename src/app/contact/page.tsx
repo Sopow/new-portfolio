@@ -15,6 +15,18 @@ function Contact() {
     document
       .getElementsByClassName("changeable-border")[0]
       .classList.add("!border-white");
+
+    const selectionStyle = `
+      ::selection {
+        background: #ece7e1;
+        color: #1a1818;
+      }
+    `;
+
+    const styleElement = document.createElement("style");
+    styleElement.textContent = selectionStyle;
+
+    document.head.appendChild(styleElement);
   };
 
   React.useEffect(() => {

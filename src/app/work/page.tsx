@@ -9,18 +9,31 @@ function Work() {
       name: "Jolyne",
       url: "www.jolyne.moe",
       category: "discord bot",
+      new: false,
     },
-    { name: "League Gap", url: "www.league-gap.fr", category: "website" },
-    { name: "SPA Atypique", url: "spa-sopow.vercel.app", category: "website" },
+    {
+      name: "League Gap",
+      url: "www.league-gap.fr",
+      category: "website",
+      new: false,
+    },
+    {
+      name: "SPA Atypique",
+      url: "spa-sopow.vercel.app",
+      category: "website",
+      new: true,
+    },
     {
       name: "Anime Mania",
       url: "anime-mania-self.vercel.app",
       category: "website",
+      new: false,
     },
     {
       name: "Jolyne Web",
       url: "www.jolyne.moe",
       category: "website",
+      new: true,
     },
   ];
 
@@ -34,6 +47,18 @@ function Work() {
     document
       .getElementsByClassName("changeable-border")[0]
       .classList.add("!border-white");
+
+    const selectionStyle = `
+      ::selection {
+        background: #ece7e1;
+        color: #1a1818;
+      }
+    `;
+
+    const styleElement = document.createElement("style");
+    styleElement.textContent = selectionStyle;
+
+    document.head.appendChild(styleElement);
   };
 
   React.useEffect(() => {
@@ -42,8 +67,8 @@ function Work() {
   return (
     <div className="h-full w-full">
       <div className="flex flex-col xl:flex-row h-full w-full justify-evenly xl:items-center items-start xl:px-0 px-12">
-        <div className="h-3/6 mb-4">
-          <div className="flex h-full flex-col justify-end">
+        <div className="h-3/6">
+          <div className="flex h-full flex-col justify-center">
             <motion.h1
               className="font-montserrat font-medium text-xl"
               // bottom to top animate
@@ -84,41 +109,50 @@ function Work() {
               </p>
               <p>
                 The world of digital design and development is constantly
-                evolving and so has my role over the last 15 years. I’m still
-                learning and gaining new skills every day.
+                evolving. I’m still learning and gaining new skills every day.
               </p>
             </motion.div>
           </div>
         </div>
         <div className="h-3/6">
           <div className="overflow-auto flex flex-col no-scrollbar h-[80vh] xl:py-12 pb-40 pt-8 xl:pb-0">
-            {list.map((item, index) => (
-              <motion.button
-                key={index}
-                // blur animate
-                initial={{ filter: "blur(10px)" }}
-                animate={{ filter: "blur(0px)" }}
-                exit={{ filter: "blur(10px)" }}
-                transition={{
-                  delay: 0.35,
-                  duration: 1,
-                  ease: [0.22, 1, 0.36, 1],
-                }}
-              >
-                <div
+            {list
+              .sort((a, b) =>
+                a.name === b.name ? 0 : a.name < b.name ? -1 : 1
+              )
+              .sort((a, b) => (a.new === b.new ? 0 : a.new ? -1 : 1))
+              .map((item, index) => (
+                <motion.button
                   key={index}
-                  className="flex font-medium font-yipes text-4xl md:text-6xl leading-[1.3] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
-                  onClick={() => window.open(`https://${item.url}`)}
+                  // blur animate
+                  initial={{ filter: "blur(10px)" }}
+                  animate={{ filter: "blur(0px)" }}
+                  exit={{ filter: "blur(10px)" }}
+                  transition={{
+                    delay: 0.35,
+                    duration: 1,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
                 >
-                  {item.name.toUpperCase()}
-                </div>
-                <div className="flex flex-row justify-between items-center mb-8">
-                  <p className="md:text-sm text-xs font-montserrat">
-                    - {item.category.toUpperCase()}
-                  </p>
-                </div>
-              </motion.button>
-            ))}
+                  <div
+                    key={index}
+                    className="flex font-medium font-yipes text-4xl md:text-6xl leading-[1.3] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
+                    onClick={() => window.open(`https://${item.url}`)}
+                  >
+                    {item.name.toUpperCase()}
+                  </div>
+                  <div className="flex flex-row justify-start items-center mb-8 gap-4 cursor-default">
+                    <p className="md:text-sm text-xs font-montserrat !cursor-text">
+                      - {item.category.toUpperCase()}
+                    </p>
+                    {item.new && (
+                      <div className="!cursor-text bg-[#ece7e1] text-[#1a1818] rounded-[20px] self-center px-2 text-xs font-semibold leading-[20px]">
+                        NEW
+                      </div>
+                    )}
+                  </div>
+                </motion.button>
+              ))}
           </div>
         </div>
       </div>
