@@ -58,7 +58,7 @@ function Home() {
           {list.map((item, index) => (
             <motion.p
               key={index}
-              className="text-black font-medium font-yipes text-[8.2rem] leading-[1.3] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
+              className="text-black font-medium font-yipes text-[8.2rem] leading-[1.2] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
               onClick={() => window.location.replace(`/${item}`)}
               // blur animate
               initial={{ filter: "blur(10px)" }}
