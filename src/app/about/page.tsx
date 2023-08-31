@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <div className="h-full w-full">
-      <div className="flex lg:flex-row flex-col h-full w-full justify-between items-start pt-20 px-4 md:p-20 overflow-auto">
+      <div className="flex lg:flex-row flex-col h-full w-full justify-between items-start py-20 px-4 md:p-20 overflow-auto">
         <div className="">
           <div className="flex h-full flex-col justify-end">
             <motion.h1
