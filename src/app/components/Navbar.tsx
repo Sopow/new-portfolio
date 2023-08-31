@@ -23,14 +23,14 @@ export const socialMedia = [
 function Navbar({}: {}) {
   const pathname = usePathname();
   return (
-    <div className="xl:h-full xs:h-1/6 xl:w-1/12 xs:w-full xs:flex-row flex xl:flex-col items-center md:justify-center xs:justify-around">
+    <div className="xl:h-full h-1/6 xl:w-1/12 w-full flex-row flex xl:flex-col items-center md:justify-center justify-around">
       {pathname === "/" ? (
         socialMedia.map((socialMedia, index) => {
           return (
             <button
               key={index}
               onClick={() => window.open(socialMedia.link, "_blank")}
-              className="xl:-rotate-90 xs:rotate-0 xs:w-1/6 flex justify-center h-1/6 items-center font-montserrat hover:opacity-50 transition-all duration-200 ease-in-out"
+              className="xl:-rotate-90 rotate-0 w-1/6 flex justify-center h-1/6 items-center font-montserrat hover:opacity-50 transition-all duration-200 ease-in-out"
             >
               {socialMedia.icon}
             </button>
@@ -39,15 +39,15 @@ function Navbar({}: {}) {
       ) : (
         <button
           onClick={() => window.location.replace("/")}
-          className="xl:-rotate-90 xs:rotate-0 xs:w-1/6 flex justify-center h-1/6 items-center font-montserrat hover:opacity-50 transition-all duration-200 ease-in-out"
+          className="xl:-rotate-90 rotate-0 w-1/6 flex justify-center h-1/6 items-center font-montserrat hover:opacity-50 transition-all duration-200 ease-in-out"
         >
           Home
         </button>
       )}
-      <hr className="border-[0.75px] xs:w-1/5 xs:h-[1px] md:w-1/6 xl:h-1/6 xl:w-[1px] my-8 border-black changeable-border" />
-      <div className="xl:-rotate-90 xs:rotate-0 xs:w-1/6 flex justify-center xl:h-1/6 items-center font-montserrat">
+      <hr className="border-[0.75px] w-1/5 h-[1px] md:w-1/6 xl:h-1/6 xl:w-[1px] my-8 border-black changeable-border" />
+      <div className="xl:-rotate-90 rotate-0 w-1/6 flex justify-center xl:h-1/6 items-center font-montserrat">
         <p className="flex">{new Date().getFullYear()}
-        <span className="md:pl-4">
+        <span className="xs:pl-1 md:pl-4">
           {" "}
           ©
         </span>

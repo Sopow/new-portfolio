@@ -69,7 +69,7 @@ function Work() {
   }, []);
   return (
     <div className="h-full w-full">
-      <div className="flex xs:flex-col xl:flex-row h-full w-full justify-evenly xl:items-center xs:items-start xl:px-0 xs:px-12">
+      <div className="flex flex-col xl:flex-row h-full w-full justify-evenly xl:items-center items-start xl:px-0 px-12">
         <div className="h-3/6 mb-4">
           <div className="flex h-full flex-col justify-end">
             <motion.h1
@@ -119,7 +119,7 @@ function Work() {
           </div>
         </div>
         <div className="h-3/6">
-          <div className="overflow-auto flex flex-col no-scrollbar h-[80vh] xl:py-12 xs:pb-40 xs:pt-8 xl:pb-0 xl:pt-0">
+          <div className="overflow-auto flex flex-col no-scrollbar h-[80vh] xl:py-12 pb-40 pt-8 xl:pb-0">
             {list.map((item, index) => (
               <motion.button
                 key={index}
@@ -135,13 +135,13 @@ function Work() {
               >
                 <div
                   key={index}
-                  className="flex font-medium font-yipes text-6xl leading-[1.3] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
+                  className="flex font-medium font-yipes text-4xl md:text-6xl leading-[1.3] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
                   onClick={() => window.location.replace(`/work/${item.url}`)}
                 >
                   {item.name.toUpperCase()} - {index + 1}
                 </div>
                 <div className="flex flex-row justify-between items-center mb-8">
-                  <p className="text-sm font-montserrat">
+                  <p className="md:text-sm text-xs font-montserrat">
                     - {item.category.toUpperCase()}
                   </p>
                 </div>

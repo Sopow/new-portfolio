@@ -9,9 +9,9 @@ function Home() {
 
   return (
     <div className="h-full w-full">
-      <div className="flex xs:flex-col xl:flex-row h-full w-full justify-evenly xl:px-0 xl:items-center xs:items-start xs:px-8 md:px-16">
-        <div className="xl:h-3/6 xs:h-fit xl:mb-4 xs:mt-4">
-          <div className="flex xl:h-full xs:h-fit flex-col xl:justify-center xs:justify-start">
+      <div className="flex flex-col xl:flex-row h-full w-full justify-evenly xl:px-0 xl:items-center items-start px-8 md:px-16">
+        <div className="xl:h-3/6 h-fit xl:mb-4 mt-4">
+          <div className="flex xl:h-full h-fit flex-col xl:justify-center justify-start">
             <motion.h1
               className="font-montserrat text-black font-medium text-xl"
               // bottom to top animate
@@ -58,7 +58,7 @@ function Home() {
           {list.map((item, index) => (
             <motion.p
               key={index}
-              className="text-black font-medium font-yipes xs:text-5xl md:text-8xl xl:text-[8.2rem] leading-[1.2] line hover:font-yipes-italic hover:text-gray-500 hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
+              className="text-black font-medium font-yipes text-5xl md:text-8xl xl:text-[8.2rem] leading-[1.2] line hover:font-yipes-italic hover:text-gray-500 hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
               onClick={() => window.location.replace(`/${item}`)}
               // blur animate
               initial={{ filter: "blur(10px)" }}
