@@ -108,7 +108,7 @@ function Work() {
                 <div
                   key={index}
                   className="flex font-medium font-yipes text-4xl md:text-6xl leading-[1.3] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
-                  onClick={() => window.location.replace(`/work/${item.url}`)}
+                  onClick={() => window.open(`https://${item.url}`)}
                 >
                   {item.name.toUpperCase()}
                 </div>
