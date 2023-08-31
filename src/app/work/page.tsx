@@ -6,49 +6,21 @@ import { motion } from "framer-motion";
 function Work() {
   const list = [
     {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
+      name: "Jolyne",
+      url: "www.jolyne.moe",
+      category: "discord bot",
+    },
+    { name: "League Gap", url: "www.league-gap.fr", category: "website" },
+    { name: "SPA Atypique", url: "spa-sopow.vercel.app", category: "website" },
+    {
+      name: "Anime Mania",
+      url: "anime-mania-self.vercel.app",
+      category: "website",
     },
     {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
-    },
-    {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
-    },
-    {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
-    },
-    {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
-    },
-    {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
-    },
-    {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
-    },
-    {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
-    },
-    {
-      name: "Test Website",
-      url: "test-website",
-      category: "Website",
+      name: "Jolyne Web",
+      url: "www.jolyne.moe",
+      category: "website",
     },
   ];
 
@@ -138,7 +110,7 @@ function Work() {
                   className="flex font-medium font-yipes text-4xl md:text-6xl leading-[1.3] line hover:font-yipes-italic hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
                   onClick={() => window.location.replace(`/work/${item.url}`)}
                 >
-                  {item.name.toUpperCase()} - {index + 1}
+                  {item.name.toUpperCase()}
                 </div>
                 <div className="flex flex-row justify-between items-center mb-8">
                   <p className="md:text-sm text-xs font-montserrat">
