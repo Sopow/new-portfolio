@@ -18,6 +18,9 @@ const config: Config = {
         yipes: ['Yipes', 'sans-serif'],
         'yipes-italic': ['Yipes Italics', 'sans-serif'],
       },
+      screens: {
+        'xs': '320px'
+      }
     },
   },
   plugins: [],

@@ -22,10 +22,10 @@ function Contact() {
   }, []);
   return (
     <div className="h-full w-full">
-      <div className="flex flex-row h-full w-full justify-between items-start p-20 overflow-auto">
+      <div className="flex flex-row h-full w-full md:p-20 xs:p-8">
         <div className="flex h-full flex-col justify-center">
           <motion.h1
-            className="text-white font-medium text-[12rem] font-yipes"
+            className="text-white font-medium xs:text-8xl md:text-[12rem] font-yipes"
             // bottom to top animate
             variants={{
               hidden: { opacity: 0, y: 35 },
@@ -43,7 +43,7 @@ function Contact() {
             Hello.
           </motion.h1>
           <motion.div
-            className="mt-4 [&>p]:pb-4 font-light text-xl max-w-2xl font-montserrat text-white"
+            className="mt-4 [&>p]:pb-4 font-light xs:text-sm md:text-xl max-w-2xl font-montserrat text-white"
             // bottom to top animate
             variants={{
               hidden: { opacity: 0, y: 15 },

@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 function About() {
   return (
     <div className="h-full w-full">
-      <div className="flex flex-row h-full w-full justify-between items-start p-20 overflow-auto">
+      <div className="flex lg:flex-row xs:flex-col h-full w-full justify-between items-start p-20 overflow-auto">
         <div className="">
           <div className="flex h-full flex-col justify-end">
             <motion.h1
-              className="text-black font-medium text-[12rem] font-yipes"
+              className="text-black font-medium xs:text-8xl md:text-[12rem] font-yipes"
               // bottom to top animate
               variants={{
                 hidden: { opacity: 0, y: 35 },
@@ -28,7 +28,7 @@ function About() {
               About
             </motion.h1>
             <motion.div
-              className="mt-4 [&>p]:pb-4 font-light text-5xl max-w-2xl font-yipes"
+              className="mt-4 [&>p]:pb-4 font-light xs:text-3xl md:text-5xl max-w-2xl font-yipes"
               // bottom to top animate
               variants={{
                 hidden: { opacity: 0, y: 15 },
@@ -46,7 +46,7 @@ function About() {
               <p>Hello, I{"'"}m Sopow. A web developer and designer.</p>
             </motion.div>
             <motion.div
-              className="mt-8 [&>p]:pb-4 font-light text-lg max-w-2xl font-montserrat"
+              className="mt-8 [&>p]:pb-4 font-light xs:text-md md:text-lg max-w-2xl font-montserrat"
               // bottom to top animate
               variants={{
                 hidden: { opacity: 0, y: 15 },
@@ -109,7 +109,7 @@ function About() {
         <div className="flex flex-col justify-center items-start">
           <motion.img
             src="https://cdn.discordapp.com/avatars/853394858895343636/4d9a6231458bfbe98910c7632341de46.webp?size=2048"
-            className="w-[25rem] h-[25rem] object-cover"
+            className="xl:w-[25rem] xl:h-[25rem] object-cover"
           />
         </div>
       </div>
