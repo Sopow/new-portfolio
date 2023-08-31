@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const img = "https://i.imgur.com/3gduCMH.png";
 
-export const metadata = {
+export const data = {
   title: "Sopow | Portfolio",
   description: "Personal website created by Sopow",
   url: "https://www.sopow.ga/",
@@ -32,37 +32,37 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <title>{data.title}</title>
+        <meta name="description" content={data.description} />
         <meta name="author" content="Sopow" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="google" content="notranslate" />
-        <meta name="theme-color" content={metadata.themeColor} />
-        <meta name="twitter:card" content={metadata.twitterCard} />
-        <meta name="twitter:url" content={metadata.twitterUrl} />
-        <meta name="twitter:title" content={metadata.twitterTitle} />
+        <meta name="theme-color" content={data.themeColor} />
+        <meta name="twitter:card" content={data.twitterCard} />
+        <meta name="twitter:url" content={data.twitterUrl} />
+        <meta name="twitter:title" content={data.twitterTitle} />
         <meta
           name="twitter:description"
-          content={metadata.twitterDescription}
+          content={data.twitterDescription}
         />
-        <meta name="twitter:image" content={metadata.twitterImage} />
+        <meta name="twitter:image" content={data.twitterImage} />
         <meta name="twitter:creator" content="@GSopow" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={metadata.title} />
-        <meta property="og:description" content={metadata.description} />
-        <meta property="og:site_name" content={metadata.title} />
-        <meta property="og:url" content={metadata.url} />
-        <meta property="og:image" content={metadata.image} />
-        <meta property="og:image:alt" content={metadata.description} />
+        <meta property="og:title" content={data.title} />
+        <meta property="og:description" content={data.description} />
+        <meta property="og:site_name" content={data.title} />
+        <meta property="og:url" content={data.url} />
+        <meta property="og:image" content={data.image} />
+        <meta property="og:image:alt" content={data.description} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:locale:alternate" content="fr_FR" />
 
-        <meta charSet={metadata.charSet} />
-        <meta name="viewport" content={metadata.viewport} />
+        <meta charSet={data.charSet} />
+        <meta name="viewport" content={data.viewport} />
         <meta
           name="google-site-verification"
-          content={metadata.googleSiteVerification}
+          content={data.googleSiteVerification}
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
