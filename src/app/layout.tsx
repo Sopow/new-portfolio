@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 const img = "https://i.imgur.com/3gduCMH.png";
 
-const meta: Metadata = {
+export const metadata: Metadata = {
   title: "Sopow",
   description: "Web Developer / Designer / Student based in France",
   openGraph: {
