@@ -8,22 +8,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 const img = "https://i.imgur.com/3gduCMH.png";
 
-export const data = {
-  title: "Sopow | Portfolio",
-  description: "Personal website created by Sopow",
-  url: "https://www.sopow.ga/",
-  image: img, // Remplacez img par la valeur appropriée
-  twitterCard: "summary_large_image",
-  twitterUrl: "https://www.sopow.ga/",
-  twitterTitle: "Sopow | Portfolio",
-  twitterDescription: "Personal website created by Sopow available on Github",
-  twitterImage: img, // Remplacez img par la valeur appropriée
-  themeColor: "#011627",
-  charSet: "utf-8",
-  viewport: "width=device-width, initial-scale=1.0",
-  googleSiteVerification: "tf06sdvU_f3DljkLJ8cemWHYRSgoxYhyUuym9L00BT8",
-};
-
 export default function RootLayout({
   children,
 }: {
@@ -32,39 +16,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>{data.title}</title>
-        <meta name="description" content={data.description} />
-        <meta name="author" content="Sopow" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="google" content="notranslate" />
-        <meta name="theme-color" content={data.themeColor} />
-        <meta name="twitter:card" content={data.twitterCard} />
-        <meta name="twitter:url" content={data.twitterUrl} />
-        <meta name="twitter:title" content={data.twitterTitle} />
-        <meta
-          name="twitter:description"
-          content={data.twitterDescription}
-        />
-        <meta name="twitter:image" content={data.twitterImage} />
-        <meta name="twitter:creator" content="@GSopow" />
+        <title>Sopow</title>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={data.title} />
-        <meta property="og:description" content={data.description} />
-        <meta property="og:site_name" content={data.title} />
-        <meta property="og:url" content={data.url} />
-        <meta property="og:image" content={data.image} />
-        <meta property="og:image:alt" content={data.description} />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="fr_FR" />
-
-        <meta charSet={data.charSet} />
-        <meta name="viewport" content={data.viewport} />
+        <meta property="og:url" content="https://www.sopow.fr/" />
+        <meta property="og:title" content="Sopow | Portfolio" />
+        <meta
+          property="og:description"
+          content="Personal website created by Sopow"
+        />
+        <meta property="og:image" content={img} />
         <meta
           name="google-site-verification"
-          content={data.googleSiteVerification}
+          content="tf06sdvU_f3DljkLJ8cemWHYRSgoxYhyUuym9L00BT8"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.sopow.fr/" />
+        <meta name="twitter:title" content="Sopow | Portfolio" />
+        <meta
+          name="twitter:description"
+          content="Personal website created by Sopow available on Github"
+        />
+        <meta name="twitter:image" content={img} />
+        <meta name="theme-color" content="#fff" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <body className={inter.className}>
         <div className="text-black h-screen w-screen flex xl:flex-row bg-[#ece7e1] changeable-bg overflow-hidden flex-col">
