@@ -95,8 +95,8 @@ function About() {
         </div>
         <div className="flex flex-col justify-center items-start">
           <motion.img
-            src="https://cdn.discordapp.com/avatars/853394858895343636/4d9a6231458bfbe98910c7632341de46.webp?size=2048"
-            className="xl:w-[25rem] xl:h-[25rem] object-cover"
+            src="/cdn/pfp.jpeg"
+            className="xl:w-[25rem] xl:h-[25rem] object-cover rounded-xl"
           />
         </div>
       </div>
