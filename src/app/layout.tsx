@@ -7,6 +7,7 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 const img = "https://i.imgur.com/3gduCMH.png";
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: "Sopow",
@@ -68,6 +69,7 @@ export default function RootLayout({
         <div className="text-black h-screen w-screen flex xl:flex-row bg-[#ece7e1] changeable-bg overflow-hidden flex-col">
           <Navbar />
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
