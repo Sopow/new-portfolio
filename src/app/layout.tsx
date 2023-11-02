@@ -6,14 +6,15 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const img = "https://i.imgur.com/3gduCMH.png";
+const img = "https://i.imgur.com/3gduCMH.png"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://new.sopow.fr"),
   title: "Sopow",
   description: "Web Developer / Designer / Student based in France",
   openGraph: {
     type: "website",
-    url: "https://sopow.fr",
+    url: "https://new.sopow.fr",
     title: "Sopow",
     description: "Web Developer / Designer / Student based in France",
     images: [
