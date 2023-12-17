@@ -21,7 +21,7 @@ function Work() {
       name: "SPA Atypique",
       url: "spa-sopow.vercel.app",
       category: "website",
-      new: true,
+      new: false,
     },
     {
       name: "Anime Mania",
@@ -33,8 +33,14 @@ function Work() {
       name: "Jolyne Web",
       url: "www.jolyne.moe",
       category: "website",
-      new: true,
+      new: false,
     },
+    {
+      name: "The Green Suits",
+      url: "www.thegreensuits.fr",
+      category: "website",
+      new: true,
+    }
   ];
 
   const applyBlackBackground = () => {
