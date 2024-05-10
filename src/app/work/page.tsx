@@ -5,23 +5,29 @@ import { motion } from "framer-motion";
 
 function Work() {
   const list = [
+    // {
+    //   name: "League Gap",
+    //   url: "www.league-gap.fr",
+    //   category: "website",
+    //   new: false,
+    // },
+    // {
+    //   name: "SPA Atypique",
+    //   url: "spa-sopow.vercel.app",
+    //   category: "website",
+    //   new: true,
+    // },
     {
-      name: "Jolyne",
-      url: "www.jolyne.moe",
-      category: "discord bot",
-      new: false,
-    },
-    {
-      name: "League Gap",
-      url: "www.league-gap.fr",
-      category: "website",
-      new: false,
-    },
-    {
-      name: "SPA Atypique",
-      url: "spa-sopow.vercel.app",
+      name: "La Casa Del Spa",
+      url: "lacasadelspa.fr",
       category: "website",
       new: true,
+    },
+    {
+      name: "The Green Suits",
+      url: "thegreensuits.fr",
+      category: "website",
+      new: false
     },
     {
       name: "Anime Mania",
@@ -30,10 +36,10 @@ function Work() {
       new: false,
     },
     {
-      name: "Jolyne Web",
+      name: "Jolyne",
       url: "www.jolyne.moe",
       category: "website",
-      new: true,
+      new: false,
     },
   ];
 
@@ -115,7 +121,7 @@ function Work() {
           </div>
         </div>
         <div className="h-3/6">
-          <div className="overflow-auto flex flex-col no-scrollbar h-[80vh] xl:py-12 pb-40 pt-8 xl:pb-0">
+          <div className="overflow-auto flex flex-col no-scrollbar h-[80vh] xl:py-12 pb-80 pt-8 xl:pb-0">
             {list
               .sort((a, b) =>
                 a.name === b.name ? 0 : a.name < b.name ? -1 : 1
