@@ -5,18 +5,6 @@ import { motion } from "framer-motion";
 
 function Work() {
   const list = [
-    // {
-    //   name: "League Gap",
-    //   url: "www.league-gap.fr",
-    //   category: "website",
-    //   new: false,
-    // },
-    // {
-    //   name: "SPA Atypique",
-    //   url: "spa-sopow.vercel.app",
-    //   category: "website",
-    //   new: true,
-    // },
     {
       name: "La Casa Del Spa",
       url: "lacasadelspa.fr",

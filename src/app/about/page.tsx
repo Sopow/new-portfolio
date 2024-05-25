@@ -95,8 +95,8 @@ function About() {
         </div>
         <div className="flex flex-col justify-center items-start">
           <motion.img
-            src="/cdn/pfp.jpeg"
-            className="xl:w-[25rem] xl:h-[25rem] object-cover rounded-xl"
+            src="/cdn/pfp.png"
+            className="xl:w-[30rem] xl:h-[30rem] object-cover rounded-xl"
           />
         </div>
       </div>

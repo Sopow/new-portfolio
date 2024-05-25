@@ -9,12 +9,12 @@ const inter = Inter({ subsets: ["latin"] });
 const img = "https://i.imgur.com/3gduCMH.png"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://new.sopow.fr"),
+  metadataBase: new URL("https://www.sopow.fr"),
   title: "Sopow",
   description: "Web Developer / Designer / Student based in France",
   openGraph: {
     type: "website",
-    url: "https://new.sopow.fr",
+    url: "https://www.sopow.fr",
     title: "Sopow",
     description: "Web Developer / Designer / Student based in France",
     images: [
@@ -43,18 +43,11 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1.0",
   keywords: [
     "sopow",
-    "sopow.fr",
-    "sopow web",
-    "sopow website",
-    "sopow portfolio",
-    "sopow web developer",
-    "sopow designer",
-    "sopow student",
-    "sopow france",
-    "sopow french",
-    "sopow discord",
-    "sopow discord bot",
-    "sopow bot",
+    "web developer",
+    "designer",
+    "student",
+    "france",
+    "portfolio",
   ],
 };
 
