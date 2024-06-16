@@ -13,7 +13,7 @@ function Work() {
     },
     {
       name: "The Green Suits",
-      url: "thegreensuits.fr",
+      url: "greensuits.fr",
       category: "website",
       new: false
     },
