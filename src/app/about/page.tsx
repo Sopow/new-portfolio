@@ -62,7 +62,7 @@ function About() {
               }}
             >
               <p>
-                Over the past two years, I&apos;ve ventured into the world of
+                Over the past four years, I&apos;ve ventured into the world of
                 web development, initially starting with JavaScript to create
                 Discord bots. As I honed my skills, I transitioned to
                 TypeScript, drawn to its ability to enhance code reliability and
@@ -72,8 +72,7 @@ function About() {
                 Now, I&apos;ve become well-versed in TypeScript, employing it to
                 craft sturdy applications with reduced error risk and improved
                 documentation. My journey from Discord bot development led me to
-                embrace the broader realm of web development, where I&apos;ve
-                found a home in Next.js.
+                embrace the broader realm of web development, working with professional companies.
               </p>
               <p>
                 With Next.js, I&apos;ve unlocked a platform to build modern,
