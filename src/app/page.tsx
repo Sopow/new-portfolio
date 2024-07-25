@@ -56,9 +56,9 @@ function Home() {
         </div>
         <div className="flex flex-col justify-center items-start">
           {list.map((item, index) => (
-            <motion.p
+            <motion.a
               key={index}
-              className="text-black font-medium font-yipes text-5xl md:text-8xl xl:text-[8.2rem] leading-[1.2] line hover:font-yipes-italic hover:text-gray-500 hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
+              className="text-black z-30 hover-target font-medium font-yipes text-5xl md:text-8xl xl:text-[8.2rem] leading-[1.2] line hover:font-yipes-italic hover:text-gray-500 hover:translate-x-1 transition-all duration-300 ease-in-out cursor-pointer"
               onClick={() => window.location.replace(`/${item}`)}
               // blur animate
               initial={{ filter: "blur(10px)" }}
@@ -71,7 +71,7 @@ function Home() {
               }}
             >
               {item.toUpperCase()}
-            </motion.p>
+            </motion.a>
           ))}
         </div>
       </div>

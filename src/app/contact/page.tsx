@@ -21,6 +21,19 @@ function Contact() {
         background: #ece7e1;
         color: #1a1818;
       }
+
+
+      .toChange-bd {
+        background-color: #ece7e1 !important;
+}
+.toChange-bg {
+  border-color: #ece7e1 !important;
+  stroke: #1a1818 !important;
+}
+
+#bg-change-element {
+background: radial-gradient(circle, rgba(20, 24, 74, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
+}
     `;
 
     const styleElement = document.createElement("style");

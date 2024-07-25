@@ -37,12 +37,6 @@
   }
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -91,3 +85,105 @@ body {
   background-color: #0f0f0f;
   transform-origin: top;
 }
+
+
+.force-visibility {
+  display: block !important
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --bg-color: #ece7e1;
+  --cursor-bg-color: rgba(255, 235, 59, 0.5);
+  --cursor-hover-bg-color: rgba(255, 235, 59, 0.7);
+}
+
+.changeable-bg {
+  background-color: var(--bg-color);
+}
+
+#bg-change-element {
+  background: radial-gradient(circle, var(--cursor-bg-color) 0%, rgba(255, 255, 255, 0) 80%);
+  opacity: 0.5; /* Lowered opacity for a more subtle effect */
+}
+
+.bg-change-hover {
+  background: radial-gradient(circle, var(--cursor-hover-bg-color) 0%, rgba(255, 255, 255, 0) 80%);
+  opacity: 0.75; /* Slightly higher opacity on hover */
+}
+
+
+.fixed {
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-gray-200 {
+  background-color: #e5e7eb;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+.scale-150 {
+  transform: scale(1.5);
+}
+
+.transition-transform {
+  transition: transform 0.3s ease-out;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.transform {
+  transform: translate(-50%, -50%);
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+* {
+  z-index: 2;
+}
+
+body, a, button, * {
+  cursor: none !important;
+}
+
+.hover-bg-change {
+  position: relative;
+}
+
+.hover-bg-change::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 80%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+  z-index: 1;
+}
+
+.hover-bg-change.hovered::after {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
