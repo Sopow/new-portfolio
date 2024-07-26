@@ -57,7 +57,7 @@ function Work() {
       }
 
       #bg-change-element {
-background: radial-gradient(circle, rgba(20, 24, 74, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
+background: radial-gradient(circle, rgba(20, 24, 74, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
 }
     `;
 
