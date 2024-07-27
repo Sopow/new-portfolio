@@ -6,10 +6,16 @@ import { motion } from "framer-motion";
 function Work() {
   const list = [
     {
+      name: "Powlang Language",
+      url: 'powlang.vercel.app',
+      category: 'website',
+      new: true
+    },
+    {
       name: "La Casa Del Spa",
       url: "lacasadelspa.fr",
       category: "website",
-      new: true,
+      new: false,
     },
     {
       name: "The Green Suits",
