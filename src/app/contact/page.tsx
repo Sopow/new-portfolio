@@ -90,10 +90,10 @@ background: radial-gradient(circle, rgba(20, 24, 74, 0.8) 0%, rgba(255, 255, 255
             <p>
               Email:{" "}
               <a
-                href="mailto:contact@sopow.fr"
+                href="mailto:contact@sopow.tech"
                 className="underline hover:opacity-50 transition-all duration-200 ease-in-out"
               >
-                contact@sopow.fr
+                contact@sopow.tech
               </a>
             </p>
             <p>
