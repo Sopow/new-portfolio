@@ -22,19 +22,7 @@ function Work() {
       url: "thegreensuits.fr",
       category: "website",
       new: false,
-    },
-    {
-      name: "Anime Mania",
-      url: "anime-mania-self.vercel.app",
-      category: "website",
-      new: false,
-    },
-    {
-      name: "Jolyne",
-      url: "www.jolyne.moe",
-      category: "website",
-      new: false,
-    },
+    }
   ];
 
   const applyBlackBackground = () => {
